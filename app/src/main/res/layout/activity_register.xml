@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baground"
+        tools:context=".Register">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/whitelogo" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="25dp"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_below="@+id/et_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="25dp"
+                android:paddingStart="20dp" />
+
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/et_email"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:paddingEnd="25dp"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/et_mobile"
+
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:entries="@array/country_arrays"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="25dp"
+                android:paddingStart="20dp" />
+
+
+            <EditText
+                android:id="@+id/et_city"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:layout_below="@+id/spinner"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:hint="City"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="25dp"
+                android:paddingStart="20dp" />
+
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:layout_below="@+id/et_pincode"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:hint="Address"
+
+                android:inputType="textPostalAddress"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="25dp"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/et_pincode"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/et_city"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shape"
+                android:ems="10"
+
+                android:hint="Pin Code"
+                android:inputType="number"
+                android:padding="10dp"
+                android:paddingEnd="25dp"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp" />
+
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:layout_below="@+id/et_address"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shape"
+
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingEnd="25dp"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp" />
+
+            <Button
+                android:id="@+id/onRegister"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/et_password"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/collaspingbg"
+                android:onClick="onRegister"
+                android:text="Create New Account"
+                android:textColor="#fff" />
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>

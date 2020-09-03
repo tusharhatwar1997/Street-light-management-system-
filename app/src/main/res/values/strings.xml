@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Hell</string>
+    <string name="title_activity_home">Hell</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="todo">TODO</string>
+    <string name="go">Go</string>
+    <string name="location">Location:</string>
+
+    <string-array name="country_arrays">
+        <item>India</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>Malaysia</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="complaint_type">
+        <item>Select Complaint Type</item>
+        <item>Bulb Failure </item>
+        <item>Break Wires</item>
+        <item>Pole Bend</item>
+        <item>Less Luminous Intensity</item>
+        <item>Barcode Not Working</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
